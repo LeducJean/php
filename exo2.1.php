@@ -16,13 +16,16 @@
 
 
 
-        $Variable1 = rand(0,100);
-        $Variable2 = rand(0,100);
-        $Variable3 = rand(0,100);
-        $Variable4 = rand(0,100);
-        $Variable5 = rand(0,100);
-
-
+            echo '<table>';
+            for($i = 1; $i < 2; $i++) {
+                echo '<tr>';
+                for($j = 1; $j < 6; $j++) {
+                    $Variable = rand(0,100);
+                    echo "<td>$Variable</td>";
+                }
+                echo '</tr>';
+            }
+            echo '</table>';
        
 
 
